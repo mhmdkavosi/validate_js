@@ -49,20 +49,17 @@ let rules={
 validation.init(data,rules).validate();
 ```
 
-
-  ## ⏳ Validate
-  #### check result validation
+## ⏳ Validate
+#### check result validation
 ```
 if (!validation.isValid()){  // return true or false
 	// something ....
   }
   ```
+#### get first message
+```
 
-  #### get first message
-  ```
-
-  validation.getFirstError();
-
+validation.getFirstError();
   /*
 default language 'fa'
 .نام و نام خانوادگی حداقل باید 20 کاراکتر باشد
