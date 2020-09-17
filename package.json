@@ -1,6 +1,6 @@
 {
   "name": "validation-rule-base",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "private": false,
   "scripts": {
@@ -12,7 +12,15 @@
     "type": "git",
     "url": "https://github.com/mhmdkavosi/validate_js.git"
   },
-  "keywords": ["validate","validation","laravel","laravel_base","validate-js","rules","rule"],
+  "keywords": [
+    "validate",
+    "validation",
+    "laravel",
+    "laravel_base",
+    "validate-js",
+    "rules",
+    "rule"
+  ],
   "author": "mohammad kavosi",
   "license": "ISC",
   "devDependencies": {
