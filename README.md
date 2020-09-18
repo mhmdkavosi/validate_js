@@ -10,6 +10,7 @@ Js Standalone library for validating data.
 
 ## Quick Start
 #### 💿 Installation
+[on npm](https://www.npmjs.com/package/validation-rule-base)
 ```
 npm i validation-rule-base
 ```
@@ -56,10 +57,12 @@ if (!validation.isValid()){  // return true or false
 	// something ....
   }
   ```
-#### get first message
-```
 
-validation.getFirstError();
+  #### get first message
+  ```
+
+  validation.getFirstError();
+
   /*
 default language 'fa'
 .نام و نام خانوادگی حداقل باید 20 کاراکتر باشد
@@ -84,3 +87,54 @@ let captions={
 validation.setCaptions(captions);
 ```
 
+## 🎁 Rules
+#### required
+The field under validation must be present in the input data and not empty. A field is considered "empty" if one of the following conditions are true:
+-   The value is `null`.
+-   The value is an empty string.
+-   The value is an empty array or empty `Countable` object.
+
+
+#### email
+The field under validation must be formatted as an e-mail address.
+#### IP
+The field under validation must be an IP address.
+#### URL
+The field under validation must be a valid URL.
+#### date
+The field under validation must be a valid.
+#### integer
+The field under validation must be an integer.
+#### boolean
+The field under validation must be an boolean.
+#### json
+The field under validation must be a valid JSON string..
+#### min_value:_value_
+The field under validation must have a minimum _value_ .
+#### max_value:_value_
+The field under validation must have a maximum _value_ .
+#### between_value:_min_,_max_
+The field under validation must have a size between the given _min_ and _max_.
+#### len:_value_
+The field under validation must have an exact length of _value_.
+#### min_len:_value_
+The field under validation must have an exact minimum length of _value_.
+#### max_len:_value_
+The field under validation must have an exact maximum length of _value_.
+#### between_len:_min_,_max_
+The field under validation must have a length between the given _min_ and _max_.
+#### confirmed:_confirmation_name_
+The field under validation must have a matching field of `foo_confirmation`. For example, if the field under validation is `password`, a matching `password_confirmation` field must be present in the input.
+#### mime:_(type,...)_
+The file under validation must have a MIME type corresponding to one of the listed extensions.
+```
+'profile' => 'mimes:jpeg,bmp,png'
+```
+#### min_file_size:_value_(kb)
+The field under validation must have a min file size matching the given _value_.
+#### max_file_size:_value_(kb)
+The field under validation must have a max file size matching the given _value_.
+#### alpha
+The field under validation must be entirely alphabetic characters.
+#### alpha_num
+The field under validation must be entirely alpha-numeric characters.
