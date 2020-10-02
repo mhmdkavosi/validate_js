@@ -16,7 +16,7 @@ npm i validation-rule-base
 ```
 CDN
 ```
-https://cdn.jsdelivr.net/npm/validation-rule-base/dist/validation.js
+https://cdn.jsdelivr.net/npm/validation-rule-base/dist/Validate.js
 ```
 
 ## 🚀 Import
