@@ -2,7 +2,8 @@
   "name": "validation-rule-base",
   "version": "1.0.6",
   "description": "",
-  "private": false,
+  "private": true,
+  "main": "validation.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
